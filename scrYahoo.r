@@ -28,18 +28,30 @@ require(TTR)
 #              "MSFT",    # Microsoft
 #              "TSLA")    # Tesla
 
-tickers <- c("TSLA")
+# Planspiel
+tickers <- c(
+             "NOK",        # "Nokia"
+             "HP",         # "HP"
+             "PG",         # "Procter & Gamble"
+             "COKE",       # "Coca Cola"
+             #              "SZG.DE",     # "Salzgitter"
+             "TSLA"        # "Tesla"
+             )
 
 for (ticker in tickers) {
 # get stock data from Yahoo   {{{2
     # http://timelyportfolio.github.io/rCharts_time_series/history.html
     udlyg <- na.omit(getSymbols(ticker, src = "yahoo", from = "2012-01-01", auto.assign = FALSE))
 
+# get companys name
+# http://r.789695.n4.nabble.com/How-to-get-name-of-a-ticker-using-Quantmod-R-td4114044.html
+nms <- paste(getQuote(ticker, what=yahooQF("Name"))[,2])
+
     # Create Chart                {{{1
-    nms <- as.character(ticker)
     x11()
     chartSeries(udlyg,
-                name=paste0(nms),
+                subset="last 12 weeks",
+                name=paste0(nms," (",ticker,")"),
                 type = "candlesticks",
                 multi.col = T,
                 bar.type = "ohlc",
@@ -58,6 +70,7 @@ for (ticker in tickers) {
     locator(1)
 
     # also easy zooming
-    zoomChart("last 12 weeks")
-    locator(1)
+    #     zoomChart("last 12 weeks")
+    #     locator(1)
 }
+

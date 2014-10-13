@@ -1,0 +1,13 @@
+symb <- "NOK"; nms <- "Nokia"
+symb <- "BMW.DE"; nms <- "BMW"
+symb <- "HP"; nms <- "HP"
+symb <- "UL"; nms <- "Unilever"
+symb <- "PG"; nms <- "Procter & Gamble"
+symb <- "NESR.DE"; nms <- "Nestlè"
+symb <- "HNNMY"; nms <- "H & M"
+symb <- "SZG.DE"; nms <- "Salzgitter"
+symb <- "AMD"; nms <- "AMD"
+symb <- "T"; nms <- "AT&T"
+symb <- "ATL.MI"; nms <- "Atlantia SpA"
+symb <- "IFX.DE"; nms <- "Infineon"
+

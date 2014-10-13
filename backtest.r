@@ -75,26 +75,26 @@ SortinoRatio(ret, MAR=0)
 # spc <- new.env()
 # dax <- new.env()
 # nasdaq <- new.env()
-# 
+#
 # setDefaults(getSymbols,src="yahoo")
 # getSymbols("^GSPC", env = spc, from = "1995-01-01", to = "2014-07-18", return.class = "xts")
 # # to = "2006-12-31")
 # getSymbols("^GDAXI", env = dax, from = "1995-01-01", to = "2014-07-18", return.class = "xts")
 # getSymbols("^NDX", env = nasdaq, from = "1995-01-01", to = "2014-07-18", return.class = "xts")
 # # read in series are of xts type,  plot is different for xts and ts
-# 
+#
 # ## series are of class xts  (plot for xts =/= for ts)
-# 
+#
 # y <- merge(spc$GSPC[,4], dax$GDAXI[,4], nasdaq$NDX[,4], all = F) # Alle close Werte
 # r <- diff(log(y))     # diff preserves the time-structure of y
-# 
+#
 # timeframe <- time(y)[-1] # time line of y (without first Index, as this is NA for returns)
 # r <- r[timeframe,]
-# 
+#
 # before <- timeframe[timeframe < as.Date("2001-09-11")]
 # after  <- timeframe[timeframe > as.Date("2001-09-11")]
-# 
+#
 # rb <- r[before,]
 # ra <- r[after,]
-# 
+#
 # plot(rb[,1])

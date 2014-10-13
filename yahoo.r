@@ -2,28 +2,14 @@
 #!/usr/bin/env Rscript
 readchart=F
 
-symb <- "AAPL"; nms <- "Apple"
-symb <- "CELG"; nms <- "Celgene"    # http://www.lynxbroker.de/lynx-boersenblick/20141006/celgene-sieht-nach-wie-vor-sehr-stark-aus/
-symb <- "BABA"; nms <- "Alibaba"
-symb <- "DAI.DE"; nms <- "Daimler"
-symb <- "GOOG"; nms <- "Google"
-symb <- "POAHF"; nms <- "Porsche"   # OTC
-symb <- "VOW3"; nms <- "Volkswagen"
-symb <- "TSLA"; nms <- "Tesla"
-
-# Planspiel
-symb <- "NOK"; nms <- "Nokia"
-symb <- "BMW.DE"; nms <- "BMW"
-symb <- "HP"; nms <- "HP"
-symb <- "UL"; nms <- "Unilever"
-symb <- "PG"; nms <- "Procter & Gamble"
-symb <- "NESR.DE"; nms <- "Nestlè"
-symb <- "HNNMY"; nms <- "H & M"
-symb <- "SZG.DE"; nms <- "Salzgitter"
-symb <- "AMD"; nms <- "AMD"
-symb <- "T"; nms <- "AT&T"
-symb <- "ATL.MI"; nms <- "Atlantia SpA"
-symb <- "IFX.DE"; nms <- "Infineon"
+symb <- "AAPL"
+symb <- "CELG"
+symb <- "BABA"
+symb <- "DAI.DE"
+symb <- "GOOG"
+symb <- "POAHF"
+symb <- "VOW3"
+symb <- "TSLA"
 
 # Packages                    {{{1
 require(latticeExtra)
@@ -37,6 +23,8 @@ require(PerformanceAnalytics)
 require(xtsExtra)
 require(devtools)
 require(TTR)
+library(zoo)
+
 
 #install.packages("RCurl")
 #install.packages('ramnathv-rCharts-2c368c8.tar.gz', repos = NULL, type = 'source')
@@ -90,7 +78,7 @@ if(!exists("ichimoku", mode="function")) source("IKTrading/R/ichimoku.R")
 # • black => Op[t] > Cl[t] and Op[t] > Cl[t-1]
 funChart <- function (y) {
     chartSeries(y,
-                name=paste0(nms),
+                name=paste0(nms," (",symb,")"),
                 type = "candlesticks",  # type = c("auto", "candlesticks", "matchsticks", "bars","line"),
                 bar.type = "hlc",
                 multi.col = T,
@@ -107,22 +95,25 @@ funChart <- function (y) {
 # http://timelyportfolio.github.io/rCharts_time_series/history.html
 
 # call chart function
-udlyg <- getprice(symb); funChart(udlyg); zoomChart("last 24 months")
-
-##  also easy zooming
-zoomChart("last 36 weeks")
-zoomChart("last 24 weeks")
-zoomChart("last 12 weeks")
-zoomChart()
+nms <- paste(getQuote(symb, what=yahooQF("Name"))[,2])
+udlyg <- getprice(symb); funChart(udlyg); zoomChart("last 12 weeks")
 
 if (readchart) {
+
+    ##  also easy zooming
+    zoomChart("last 6 weeks")
+    zoomChart("last 12 weeks")
+    zoomChart("last 24 weeks")
+    zoomChart("last 36 weeks")
+    zoomChart()
 
     # Technical Indicators
     alligator(udlyg)
 
     # Ichimoku
     # zoomChart("last 12 weeks")
-    ichimoku(HLC(udlyg))
+    addTA(ichimoku(HLC(udlyg)), on=1, lwd = 3, col = "blue")
+    addTA(ichi[,2], on=1, col = "blue")
 
     # EMA's
     EMA9 <- EMA(Cl(udlyg), n = 9); addTA(EMA9, on=1, lwd = 3, col = "red")
@@ -136,5 +127,91 @@ if (readchart) {
     addMACD
 
 }
-readchart=T
 
+
+##################################
+#  performance of german stocks  #
+##################################
+# http://www.r-bloggers.com/displaying-german-stock-performance-with-r-using-ggplot2/
+
+if (readchart) {
+    #get list of Symbols for DAX-values
+    l<- c("^GDAXI",
+          "DB1.DE",
+          "ADS.DE",
+          "ALV.DE",
+          "BAS.DE",
+          "BAYN.DE",
+          "BEI.DE",
+          "BMW.DE",
+          "CBK.DE",
+          "DAI.DE",
+          "DBK.DE",
+          "DPW.DE",
+          "DTE.DE",
+          "EOAN.DE",
+          "FME.DE",
+          "FRE.DE",
+          "HEI.DE",
+          "HEN3.DE",
+          "IFX.DE",
+          "LHA.DE",
+          "LIN.DE",
+          "MAN.DE",
+          "MEO.DE",
+          "MUV2.DE",
+          "RWE.DE",
+          "SAP.DE",
+          "SDF.DE",
+          "SIE.DE",
+          "TKA.DE",
+          "VOW3.DE")
+    
+    getSymbols(l, from="2014-09-01")
+    # getSymbols(l, from="last 6 weeks")
+    l[1] <- "GDAXI"
+    
+    # Function to extract "adjusted prices" and build dataframe: Thanks to Zach
+    # Mayer of moderntoolmaking.blogspot.com
+    symbolFrame <- function(symbolList) {
+    Data <- data.frame(NULL)
+    for (S in symbolList) {
+    Data <- cbind(Data,Ad(get(S)))
+    }
+    colnames(Data) <- symbolList
+    return(Data)
+    
+    }
+    
+    Data <- symbolFrame(l[-1]) # build a dataframe without DAX istelf
+    Data <- cbind(Ad(GDAXI), Data) # add DAX
+    colnames(Data)[1] <- "DAX"
+    tail(Data,2) #just to check - often Yahoo is not up to date and there are NAs in the last row
+    #Data <- window(Data, start=start(Data), end=end(Data)-1) # code to delete last row...
+    
+    Return.calculate(Data, method="simple") -> Data.r #calculates the returns (simple)
+    Data.r[is.na(Data.r)] <- 0 
+    
+    #builds frames for the respective perfromances on short, mid and long term
+    mid.perf <- as.data.frame(coredata(tail(cumsum(tail(Data.r,20)),1)))
+    short.perf <- as.data.frame(coredata(tail(cumsum(tail(Data.r,5)),1)))
+    long.perf <- as.data.frame(coredata(tail(cumsum(tail(Data.r,250)),1)))
+    
+    per.df <- data.frame(cbind(t(short.perf), t(mid.perf), t(long.perf)))
+    
+    colnames(per.df) <- c("short", "mid", "long")
+    row.names(per.df)[1] <- "DAX"
+    chart_title <- paste("Performance Comparison DAX values\n(latest data close of ",end(Data),")")
+    z <- ggplot(data=per.df, aes(short, mid, label=rownames(per.df))) + geom_point(aes(color=long), size=4) +
+    geom_text(hjust=0, vjust=0,size=4) + geom_vline(xintercept=0) + geom_hline(yintercept=0) +
+    scale_colour_gradient2(low="red", high="green", "250days\nPerformance") +
+    scale_y_continuous("Mid Performance: 20days", labels= percent ) +
+    scale_x_continuous("Short Performance: 5days", labels= percent )
+    
+    z + theme(legend.background = element_rect(colour = "black"))
+}
+
+###############
+#  readchart  #
+###############
+readchart=T
