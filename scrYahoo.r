@@ -2,6 +2,7 @@
 #!/usr/bin/env Rscript
 setwd("/home/zapata/Dokumente/Finance")
 
+scan()
 # Packages                    {{{1
 require(latticeExtra)
 require(ggplot2)
@@ -20,7 +21,7 @@ require(TTR)
 #require(rCharts)
 
 # Retreive Data               {{{1
-# ticker                      {{{2
+# Ticker                      {{{2
 
 # tickers <- c("AAPL",    # Apple
 #              "GOOGL",   # Google
@@ -28,29 +29,27 @@ require(TTR)
 #              "MSFT",    # Microsoft
 #              "TSLA")    # Tesla
 
-# Planspiel
-tickers <- c(
-             "NOK",        # "Nokia"
-             "HP",         # "HP"
-             "PG",         # "Procter & Gamble"
-             "COKE",       # "Coca Cola"
-             #              "SZG.DE",     # "Salzgitter"
-             "TSLA"        # "Tesla"
-             )
+# Planspiel                   {{{2
+# http://www.ats.ucla.edu/stat/r/modules/raw_data.htm
+symbs <- scan(file="tickers.txt", sep=";",
+              what=list(dax="",dax_names="",planspiel="",ps_names=""),
+              skip=1)
+tickers <- symbs$planspiel
 
 for (ticker in tickers) {
-# get stock data from Yahoo   {{{2
-    # http://timelyportfolio.github.io/rCharts_time_series/history.html
-    udlyg <- na.omit(getSymbols(ticker, src = "yahoo", from = "2012-01-01", auto.assign = FALSE))
+# Get Stock Data From Yahoo   {{{2
+
+# http://timelyportfolio.github.io/rCharts_time_series/history.html
+udlyg <- na.omit(getSymbols(ticker, src = "yahoo", from = "2012-01-01", auto.assign = FALSE))
 
 # get companys name
 # http://r.789695.n4.nabble.com/How-to-get-name-of-a-ticker-using-Quantmod-R-td4114044.html
 nms <- paste(getQuote(ticker, what=yahooQF("Name"))[,2])
 
-    # Create Chart                {{{1
+# Create Chart                {{{1
     x11()
     chartSeries(udlyg,
-                subset="last 12 weeks",
+                subset="last 8 weeks",
                 name=paste0(nms," (",ticker,")"),
                 type = "candlesticks",
                 multi.col = T,
