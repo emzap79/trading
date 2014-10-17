@@ -2,20 +2,34 @@
 #!/usr/bin/env Rscript
 readchart=F
 
-symb <- "AAPL"
-symb <- "CELG"
-symb <- "BABA"
-symb <- "DAI.DE"
-symb <- "GOOG"
-symb <- "POAHF"
-symb <- "VOW3"
-symb <- "TSLA"
-symb <- "HMSB.DE"
-symb <- "SOBA.DE"    # "AT&T"
-symb <- "PRG.DE"
-symb <- "PG"
-symb <- "TKMR"   # Tekmira "Ebola" Medicin
-symb <- "CMRX"   # Chimerix "Ebola" Medicin
+# Read From CSV               {{{1
+# http://www.ats.ucla.edu/stat/r/modules/raw_data.htm
+symbs <- read.csv("tickers.txt",
+                  header=T, skip=0,
+                  sep=';', dec='.',
+                  encoding='utf-8',
+                  stringsAsFactors=F, fill=T,
+                  blank.lines.skip=T,
+                  na.strings=c(NA,"NA"," NA ","#N/A N/A"))
+
+# medical "ebola"             {{{2
+symb <- na.omit(symbs$medical)
+names(symb) <- na.omit(symbs$med_names); names(symb)
+
+# planspiel                   {{{2
+symb <- na.omit(symbs$planspiel)
+names(symb) <- na.omit(symbs$ps_names); names(symb)
+
+# planspiel (alle)            {{{2
+symb <- na.omit(symbs$ps_alle)
+names(symb) <- na.omit(symbs$ps_alle_names); names(symb)
+## aktien
+symb <- symb[1:169]
+## zertifikate
+symb <- symb[169:length(symb)]
+
+# choose ticker               {{{2
+symb <- symb[2]
 
 # Packages                    {{{1
 require(latticeExtra)
@@ -104,6 +118,7 @@ if (readchart) {
     zoomChart("last 12 weeks")
     zoomChart("last 24 weeks")
     zoomChart("last 36 weeks")
+    zoomChart("last 2 years")
     zoomChart()
 
     # Technical Indicators
@@ -111,7 +126,7 @@ if (readchart) {
 
     # Ichimoku
     # zoomChart("last 12 weeks")
-    addTA(ichimoku(HLC(udlyg)))
+    #     addTA(ichimoku(HLC(udlyg)))
     ichimoku(HLC(udlyg))
 
     # EMA's

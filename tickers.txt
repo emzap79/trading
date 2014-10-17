@@ -1,201 +1,202 @@
-dax   ; dax_names        ; planspiel; ps_names        ; planspiel_alle; ps_alle_names                          ; 
-GDAXI ; DAX              ; NOK      ; Nokia           ;               ; Abertis, Serie A                       ; 
-DS.DE ; Adidas           ; HP       ; HP              ;               ; ACS                                    ; 
-LV.DE ; Allianz          ; SOBA.DE  ; AT&T            ;               ; adidas [+]                             ; 
-AS.DE ; BASF             ; PRG.DE   ; Procter & Gamble;               ; Air Berlin                             ; 
-AYN.DE; Bayer            ; PG       ; Procter & Gamble;               ; Air Liquide [+]                        ; 
-EI.DE ; Beiersdorf       ; COKE     ; Coca Cola       ;               ; Airbus Group                           ; 
-MW.DE ; BMW              ; VOW.DE   ; VW              ;               ; Alcoa                                  ; 
-BK.DE ; Commerzbank      ; HMSB.DE  ; H&M             ;               ; Allianz SE                             ; 
-ON.DE ; Continental      ; MAN.DE   ; MAN             ;               ; Amadeus IT Holding                     ; 
-AI.DE ; Daimler          ; SZG.DE   ; Salzgitter      ;               ; Amazon                                 ; 
-B1.DE ; Deutsch Boerse   ; TSLA     ; Tesla           ;               ; AMD Advanced Micro Devices             ; 
-BK.DE ; Deutsche Bank    ;          ;                 ;               ; Andritz                                ; 
-PW.DE ; Deutsche Post AG ;          ;                 ;               ; Apple Inc.                             ; 
-TE.DE ; Deutsche Telekom ;          ;                 ;               ; Arcelor Mittal                         ; 
-OAN.DE; E.ON SE          ;          ;                 ;               ; AT&T                                   ; 
-ME.DE ; Fresenius Medical;          ;                 ;               ; Atlantia                               ; 
-RE.DE ; Fresenius SE     ;          ;                 ;               ; Aurubis                                ; 
-EI.DE ; Heidelberg Cement;          ;                 ;               ; Autogrill Spa                          ; 
-EN3.DE; Henkel AG        ;          ;                 ;               ; AXA [+]                                ; 
-FX.DE ; Infineon         ;          ;                 ;               ; Banco Bilbao Viz. Arg. (BBVA) [+]      ; 
-HA.DE ; Lufthansa        ;          ;                 ;               ; Banco Santander Centr. Hisp. (BSCH)    ; 
-IN.DE ; Linde            ;          ;                 ;               ; BASF                                   ; 
-XS.DE ; Lanxess AG       ;          ;                 ;               ; Bayer                                  ; 
-RK.DE ; Merck            ;          ;                 ;               ; Bayer. Motoren Werke (BMW) St. [+]     ; 
-UV2.DE; Muechner Re      ;          ;                 ;               ; Beiersdorf                             ; 
-WE.DE ; Rewe             ;          ;                 ;               ; BHP Billiton                           ; 
-AP.DE ; SAP              ;          ;                 ;               ; Bilfinger  Berger                      ; 
-DF.DE ; K+S AG           ;          ;                 ;               ; BNP Paribas [+]                        ; 
-IE.DE ; Siemens AG       ;          ;                 ;               ; Bouygues                               ; 
-KA.DE ; Thyssenkrupp     ;          ;                 ;               ; Buzzi Unicem                           ; 
-OW3.DE; Volkswagen       ;          ;                 ;               ; Caixabank                              ; 
-      ;                  ;          ;                 ;               ; Carrefour                              ; 
-      ;                  ;          ;                 ;               ; Celesio                                ; 
-      ;                  ;          ;                 ;               ; Cisco Systems [+]                      ; 
-      ;                  ;          ;                 ;               ; Coca-Cola                              ; 
-      ;                  ;          ;                 ;               ; Colgate-Palmolive Co. [+]              ; 
-      ;                  ;          ;                 ;               ; Commerzbank                            ; 
-      ;                  ;          ;                 ;               ; Continental                            ; 
-      ;                  ;          ;                 ;               ; Daimler AG                             ; 
-      ;                  ;          ;                 ;               ; Danone [+]                             ; 
-      ;                  ;          ;                 ;               ; De'Longhi                              ; 
-      ;                  ;          ;                 ;               ; Deutsche Bank                          ; 
-      ;                  ;          ;                 ;               ; Deutsche Börse                         ; 
-      ;                  ;          ;                 ;               ; Deutsche Post                          ; 
-      ;                  ;          ;                 ;               ; Deutsche Telekom                       ; 
-      ;                  ;          ;                 ;               ; Deutsche Wohnen                        ; 
-      ;                  ;          ;                 ;               ; E.ON                                   ; 
-      ;                  ;          ;                 ;               ; EDF                                    ; 
-      ;                  ;          ;                 ;               ; Enagás                                 ; 
-      ;                  ;          ;                 ;               ; ENEL                                   ; 
-      ;                  ;          ;                 ;               ; ENI                                    ; 
-      ;                  ;          ;                 ;               ; Erste Bank                             ; 
-      ;                  ;          ;                 ;               ; Essilor [+]                            ; 
-      ;                  ;          ;                 ;               ; Exxon Mobil                            ; 
-      ;                  ;          ;                 ;               ; Facebook Inc.                          ; 
-      ;                  ;          ;                 ;               ; FCC                                    ; 
-      ;                  ;          ;                 ;               ; Fiat Chrysler Automobiles              ; 
-      ;                  ;          ;                 ;               ; Fielmann                               ; 
-      ;                  ;          ;                 ;               ; Fraport                                ; 
-      ;                  ;          ;                 ;               ; Fresenius Medical Care                 ; 
-      ;                  ;          ;                 ;               ; Gagfah S.A.                            ; 
-      ;                  ;          ;                 ;               ; Gas Natural                            ; 
-      ;                  ;          ;                 ;               ; GDF Suez                               ; 
-      ;                  ;          ;                 ;               ; General Electric                       ; 
-      ;                  ;          ;                 ;               ; Generali Ass [+]                       ; 
-      ;                  ;          ;                 ;               ; Geox                                   ; 
-      ;                  ;          ;                 ;               ; GlaxoSmithKline [+]                    ; 
-      ;                  ;          ;                 ;               ; Google Inc. A                          ; 
-      ;                  ;          ;                 ;               ; Grifols                                ; 
-      ;                  ;          ;                 ;               ; Hamburger Hafen und Logistik           ; 
-      ;                  ;          ;                 ;               ; Hannover Rück.                         ; 
-      ;                  ;          ;                 ;               ; HeidelbergCement                       ; 
-      ;                  ;          ;                 ;               ; Henkel Vz. [+]                         ; 
-      ;                  ;          ;                 ;               ; Hewlett-Packard [+]                    ; 
-      ;                  ;          ;                 ;               ; Hugo Boss                              ; 
-      ;                  ;          ;                 ;               ; Iberdrola                              ; 
-      ;                  ;          ;                 ;               ; IBM [+]                                ; 
-      ;                  ;          ;                 ;               ; Indesit Company                        ; 
-      ;                  ;          ;                 ;               ; Inditex                                ; 
-      ;                  ;          ;                 ;               ; Infineon Technologies                  ; 
-      ;                  ;          ;                 ;               ; Intel [+]                              ; 
-      ;                  ;          ;                 ;               ; Intesa Sanpaolo [+]                    ; 
-      ;                  ;          ;                 ;               ; K+S                                    ; 
-      ;                  ;          ;                 ;               ; KUKA                                   ; 
-      ;                  ;          ;                 ;               ; Lafarge [+]                            ; 
-      ;                  ;          ;                 ;               ; Lanxess                                ; 
-      ;                  ;          ;                 ;               ; Linde                                  ; 
-      ;                  ;          ;                 ;               ; L'Oréal [+]                            ; 
-      ;                  ;          ;                 ;               ; Lufthansa v.N.A.                       ; 
-      ;                  ;          ;                 ;               ; LVMH Moët. Henn.L.Vuitton              ; 
-      ;                  ;          ;                 ;               ; MAN SE St.                             ; 
-      ;                  ;          ;                 ;               ; McDonald's                             ; 
-      ;                  ;          ;                 ;               ; Mediaset S.p.A.                        ; 
-      ;                  ;          ;                 ;               ; Merck                                  ; 
-      ;                  ;          ;                 ;               ; Metro                                  ; 
-      ;                  ;          ;                 ;               ; Michelin                               ; 
-      ;                  ;          ;                 ;               ; Microsoft                              ; 
-      ;                  ;          ;                 ;               ; MLP                                    ; 
-      ;                  ;          ;                 ;               ; Moncler                                ; 
-      ;                  ;          ;                 ;               ; MTU Aero Engines                       ; 
-      ;                  ;          ;                 ;               ; Münchener Rück [+]                     ; 
-      ;                  ;          ;                 ;               ; Nestlé S.A.                            ; 
-      ;                  ;          ;                 ;               ; Nike Inc. CI B [+]                     ; 
-      ;                  ;          ;                 ;               ; Nokia [+]                              ; 
-      ;                  ;          ;                 ;               ; Nordex                                 ; 
-      ;                  ;          ;                 ;               ; Novartis [+]                           ; 
-      ;                  ;          ;                 ;               ; OMV                                    ; 
-      ;                  ;          ;                 ;               ; Orange                                 ; 
-      ;                  ;          ;                 ;               ; Osram Licht                            ; 
-      ;                  ;          ;                 ;               ; Panasonic Corp.                        ; 
-      ;                  ;          ;                 ;               ; Pfizer                                 ; 
-      ;                  ;          ;                 ;               ; Philips Electr. [+]                    ; 
-      ;                  ;          ;                 ;               ; Pirelli & C                            ; 
-      ;                  ;          ;                 ;               ; Porsche Automobil Holding VZO          ; 
-      ;                  ;          ;                 ;               ; Procter & Gamble                       ; 
-      ;                  ;          ;                 ;               ; ProSiebenSat.1 Media                   ; 
-      ;                  ;          ;                 ;               ; Prysmian                               ; 
-      ;                  ;          ;                 ;               ; Renault                                ; 
-      ;                  ;          ;                 ;               ; Reply S.p.A.                           ; 
-      ;                  ;          ;                 ;               ; Repsol YPF                             ; 
-      ;                  ;          ;                 ;               ; Rhön-Klinikum                          ; 
-      ;                  ;          ;                 ;               ; Rio Tinto                              ; 
-      ;                  ;          ;                 ;               ; Royal Dutch Shell                      ; 
-      ;                  ;          ;                 ;               ; RWE                                    ; 
-      ;                  ;          ;                 ;               ; Sacyr                                  ; 
-      ;                  ;          ;                 ;               ; Saint-Gobain                           ; 
-      ;                  ;          ;                 ;               ; Salvatore Ferragamo                    ; 
-      ;                  ;          ;                 ;               ; Salzgitter                             ; 
-      ;                  ;          ;                 ;               ; Sanofi-Aventis [+]                     ; 
-      ;                  ;          ;                 ;               ; SAP [+]                                ; 
-      ;                  ;          ;                 ;               ; Schneider Electric [+]                 ; 
-      ;                  ;          ;                 ;               ; SES Global                             ; 
-      ;                  ;          ;                 ;               ; Siemens NA                             ; 
-      ;                  ;          ;                 ;               ; Sixt                                   ; 
-      ;                  ;          ;                 ;               ; Snam Rete Gas                          ; 
-      ;                  ;          ;                 ;               ; Software AG                            ; 
-      ;                  ;          ;                 ;               ; Sony [+]                               ; 
-      ;                  ;          ;                 ;               ; STADA Arzneimittel                     ; 
-      ;                  ;          ;                 ;               ; Starbucks Corp.                        ; 
-      ;                  ;          ;                 ;               ; Südzucker                              ; 
-      ;                  ;          ;                 ;               ; Telefónica [+]                         ; 
-      ;                  ;          ;                 ;               ; Telekom Austria                        ; 
-      ;                  ;          ;                 ;               ; ThyssenKrupp                           ; 
-      ;                  ;          ;                 ;               ; TOTAL                                  ; 
-      ;                  ;          ;                 ;               ; Toyota                                 ; 
-      ;                  ;          ;                 ;               ; TUI                                    ; 
-      ;                  ;          ;                 ;               ; Ubi Banca                              ; 
-      ;                  ;          ;                 ;               ; Ubisoft Entertain                      ; 
-      ;                  ;          ;                 ;               ; UBS                                    ; 
-      ;                  ;          ;                 ;               ; UniCredit S.p.A.                       ; 
-      ;                  ;          ;                 ;               ; Unilever                               ; 
-      ;                  ;          ;                 ;               ; United Internet                        ; 
-      ;                  ;          ;                 ;               ; Veolia Environnement                   ; 
-      ;                  ;          ;                 ;               ; Vinci S.A.                             ; 
-      ;                  ;          ;                 ;               ; Vivendi S.A. [+]                       ; 
-      ;                  ;          ;                 ;               ; Vodafone                               ; 
-      ;                  ;          ;                 ;               ; voestalpine                            ; 
-      ;                  ;          ;                 ;               ; Volkswagen Vz. [+]                     ; 
-      ;                  ;          ;                 ;               ; Wacker Chemie                          ; 
-      ;                  ;          ;                 ;               ; Walt Disney                            ; 
-      ;                  ;          ;                 ;               ; Wincor Nixdorf                         ; 
-      ;                  ;          ;                 ;               ; Wirecard                               ; 
-      ;                  ;          ;                 ;               ; Atlas Copco A [+]                      ; 
-      ;                  ;          ;                 ;               ; Electrolux, AB ser.B                   ; 
-      ;                  ;          ;                 ;               ; Ericsson B                             ; 
-      ;                  ;          ;                 ;               ; Hennes & Mauritz [+]                   ; 
-      ;                  ;          ;                 ;               ; Modern Times Group B                   ; 
-      ;                  ;          ;                 ;               ; Swedbank                               ; 
-      ;                  ;          ;                 ;               ; Volvo                                  ; 
-      ;                  ;          ;                 ;               ; 3,25% Bundesrep. Deutschland 11/21     ; 
-      ;                  ;          ;                 ;               ; 3,5% Volkswagen 09/15                  ; 
-      ;                  ;          ;                 ;               ; 4,125 EIB Europ. Invest. Bank 07/24    ; 
-      ;                  ;          ;                 ;               ; DekaFonds TF                           ; 
-      ;                  ;          ;                 ;               ; Deka-Liquidität: EURO TF               ; 
-      ;                  ;          ;                 ;               ; Deka-UmweltInvest TF                   ; 
-      ;                  ;          ;                 ;               ; AriDeka TF                             ; 
-      ;                  ;          ;                 ;               ; Deka-Deutschland Balance TF            ; 
-      ;                  ;          ;                 ;               ; Deka-GlobalChampions TF                ; 
-      ;                  ;          ;                 ;               ; Amazon.com Bonus-Zertifikat (CIT)      ; 
-      ;                  ;          ;                 ;               ; BASF Discount-Zertifikat (HSBC)        ; 
-      ;                  ;          ;                 ;               ; Bovespa Index-Zertifikat (DBK)         ; 
-      ;                  ;          ;                 ;               ; Brent Crud Quanto-Zertifikat (ABN)     ; 
-      ;                  ;          ;                 ;               ; DAX Index-Zertifikat (DBK)             ; 
-      ;                  ;          ;                 ;               ; DAX Reverse-Index-Zertifikat (DZ)      ; 
-      ;                  ;          ;                 ;               ; EuroStoxx50 (DBC)                      ; 
-      ;                  ;          ;                 ;               ; Gold Quanto-Zertifikat (ABN)           ; 
-      ;                  ;          ;                 ;               ; Kupfer Partizip.-Zertifikat (RBS)      ; 
-      ;                  ;          ;                 ;               ; MDAX Index-Zertifikat (BLB)            ; 
-      ;                  ;          ;                 ;               ; NASDAQ 100 Index-Zertifikat (DBK)      ; 
-      ;                  ;          ;                 ;               ; Nickel Index-Zertifikat (RBS)          ; 
-      ;                  ;          ;                 ;               ; Palladium Quanto-Zertifikat (ABN)      ; 
-      ;                  ;          ;                 ;               ; Rare Metals Index-Zertifikat (RBS)     ; 
-      ;                  ;          ;                 ;               ; S&P 500 Index-Zertifikat (COM)         ; 
-      ;                  ;          ;                 ;               ; Silber Quanto-Zertifikat (ABN)         ; 
-      ;                  ;          ;                 ;               ; Südeur.-Index Basket-Zertifikat (DB)   ; 
-      ;                  ;          ;                 ;               ; TECDAX Index-Zertifikat (DBK)          ; 
-      ;                  ;          ;                 ;               ; World Alternative Energy Index (SGE)   ; 
-      ;                  ;          ;                 ;               ; World Uranium-Partizip-Zertifikat (SOG); 
-      ;                  ;          ;                 ;               ; World Water Index-Zertifkat (SGE)      ; 
-      ;                  ;          ;                 ;               ; Zucker Partizip.-Zertifikat (RBS)      ; 
+dax;dax_names;planspiel;ps_names;planspiel_alle;ps_alle_names;medical;med_names
+^GDAXI;DAX;^GDAXI;DAX;^GDAXI;DAX;^GDAXI;DAX
+ADS.DE;Adidas;NOK;Nokia;NA;Abertis, Serie A;TKMR;Tekmira "Ebola" Medicin
+ALV.DE;Allianz;HP;HP;NA;ACS;CMRX;Chimerix "Ebola" Medicin
+BAS.DE;BASF;SOBA.DE;AT&T;NA;adidas [+];LAKE;Lakeland "Ebola"
+BAYN.DE;Bayer;PG;Procter & Gamble;NA;Air Berlin;AHPI;Allied Healthcare
+BEI.DE;Beiersdorf;COKE;Coca Cola;NA;Air Liquide [+];SRPT;Sarepta Therapeutics
+BMW.DE;BMW;VOW.DE;VW;NA;Airbus Group;NA;NA
+CBK.DE;Commerzbank;HMSB.DE;H&M;NA;Alcoa;NA;NA
+CON.DE;Continental;MAN.DE;MAN;NA;Allianz SE;NA;NA
+DAI.DE;Daimler;SZG.DE;Salzgitter;NA;Amadeus IT Holding;NA;NA
+DB1.DE;Deutsch Boerse;TSLA;Tesla;NA;Amazon;NA;NA
+DBK.DE;Deutsche Bank;NA;NA;NA;AMD Advanced Micro Devices;NA;NA
+DPW.DE;Deutsche Post AG;NA;NA;NA;Andritz;NA;NA
+DTE.DE;Deutsche Telekom;NA;NA;NA;Apple Inc.;NA;NA
+EOAN.DE;E.ON SE;NA;NA;NA;Arcelor Mittal;NA;NA
+FME.DE;Fresenius Medical;NA;NA;NA;AT&T;NA;NA
+FRE.DE;Fresenius SE;NA;NA;NA;Atlantia;NA;NA
+HEI.DE;Heidelberg Cement;NA;NA;NA;Aurubis;NA;NA
+HEN3.DE;Henkel AG;NA;NA;NA;Autogrill Spa;NA;NA
+IFX.DE;Infineon;NA;NA;NA;AXA [+];NA;NA
+LHA.DE;Lufthansa;NA;NA;NA;Banco Bilbao Viz. Arg. (BBVA) [+];NA;NA
+LIN.DE;Linde;NA;NA;NA;Banco Santander Centr. Hisp. (BSCH);NA;NA
+LXS.DE;Lanxess AG;NA;NA;NA;BASF;NA;NA
+MRK.DE;Merck;NA;NA;NA;Bayer;NA;NA
+MUV2.DE;Muechner Re;NA;NA;NA;Bayer. Motoren Werke (BMW) St. [+];NA;NA
+RWE.DE;Rewe;NA;NA;NA;Beiersdorf;NA;NA
+SAP.DE;SAP;NA;NA;NA;BHP Billiton;NA;NA
+SDF.DE;K+S AG;NA;NA;NA;Bilfinger Berger;NA;NA
+SIE.DE;Siemens AG;NA;NA;NA;BNP Paribas [+];NA;NA
+TKA.DE;Thyssenkrupp;NA;NA;NA;Bouygues;NA;NA
+VOW3.DE;Volkswagen;NA;NA;NA;Buzzi Unicem;NA;NA
+NA;NA;NA;NA;NA;Caixabank;NA;NA
+NA;NA;NA;NA;NA;Carrefour;NA;NA
+NA;NA;NA;NA;NA;Celesio;NA;NA
+NA;NA;NA;NA;NA;Cisco Systems [+];NA;NA
+NA;NA;NA;NA;NA;Coca-Cola;NA;NA
+NA;NA;NA;NA;NA;Colgate-Palmolive Co. [+];NA;NA
+NA;NA;NA;NA;NA;Commerzbank;NA;NA
+NA;NA;NA;NA;NA;Continental;NA;NA
+NA;NA;NA;NA;NA;Daimler AG;NA;NA
+NA;NA;NA;NA;NA;Danone [+];NA;NA
+NA;NA;NA;NA;NA;De'Longhi;NA;NA
+NA;NA;NA;NA;NA;Deutsche Bank;NA;NA
+NA;NA;NA;NA;NA;Deutsche Börse;NA;NA
+NA;NA;NA;NA;NA;Deutsche Post;NA;NA
+NA;NA;NA;NA;NA;Deutsche Telekom;NA;NA
+NA;NA;NA;NA;NA;Deutsche Wohnen;NA;NA
+NA;NA;NA;NA;NA;E.ON;NA;NA
+NA;NA;NA;NA;NA;EDF;NA;NA
+NA;NA;NA;NA;NA;Enagás;NA;NA
+NA;NA;NA;NA;NA;ENEL;NA;NA
+NA;NA;NA;NA;NA;ENI;NA;NA
+NA;NA;NA;NA;NA;Erste Bank;NA;NA
+NA;NA;NA;NA;NA;Essilor [+];NA;NA
+NA;NA;NA;NA;NA;Exxon Mobil;NA;NA
+NA;NA;NA;NA;NA;Facebook Inc.;NA;NA
+NA;NA;NA;NA;NA;FCC;NA;NA
+NA;NA;NA;NA;NA;Fiat Chrysler Automobiles;NA;NA
+NA;NA;NA;NA;NA;Fielmann;NA;NA
+NA;NA;NA;NA;NA;Fraport;NA;NA
+NA;NA;NA;NA;NA;Fresenius Medical Care;NA;NA
+NA;NA;NA;NA;NA;Gagfah S.A.;NA;NA
+NA;NA;NA;NA;NA;Gas Natural;NA;NA
+NA;NA;NA;NA;NA;GDF Suez;NA;NA
+NA;NA;NA;NA;NA;General Electric;NA;NA
+NA;NA;NA;NA;NA;Generali Ass [+];NA;NA
+NA;NA;NA;NA;NA;Geox;NA;NA
+NA;NA;NA;NA;NA;GlaxoSmithKline [+];NA;NA
+NA;NA;NA;NA;NA;Google Inc. A;NA;NA
+NA;NA;NA;NA;NA;Grifols;NA;NA
+NA;NA;NA;NA;NA;Hamburger Hafen und Logistik;NA;NA
+NA;NA;NA;NA;NA;Hannover Rück.;NA;NA
+NA;NA;NA;NA;NA;HeidelbergCement;NA;NA
+NA;NA;NA;NA;NA;Henkel Vz. [+];NA;NA
+NA;NA;NA;NA;NA;Hewlett-Packard [+];NA;NA
+NA;NA;NA;NA;NA;Hugo Boss;NA;NA
+NA;NA;NA;NA;NA;Iberdrola;NA;NA
+NA;NA;NA;NA;NA;IBM [+];NA;NA
+NA;NA;NA;NA;NA;Indesit Company;NA;NA
+NA;NA;NA;NA;NA;Inditex;NA;NA
+NA;NA;NA;NA;NA;Infineon Technologies;NA;NA
+NA;NA;NA;NA;NA;Intel [+];NA;NA
+NA;NA;NA;NA;NA;Intesa Sanpaolo [+];NA;NA
+NA;NA;NA;NA;NA;K+S;NA;NA
+NA;NA;NA;NA;NA;KUKA;NA;NA
+NA;NA;NA;NA;NA;Lafarge [+];NA;NA
+NA;NA;NA;NA;NA;Lanxess;NA;NA
+NA;NA;NA;NA;NA;Linde;NA;NA
+NA;NA;NA;NA;NA;L'Oréal [+];NA;NA
+NA;NA;NA;NA;NA;Lufthansa v.N.A.;NA;NA
+NA;NA;NA;NA;NA;LVMH Moët. Henn.L.Vuitton;NA;NA
+NA;NA;NA;NA;NA;MAN SE St.;NA;NA
+NA;NA;NA;NA;NA;McDonald's;NA;NA
+NA;NA;NA;NA;NA;Mediaset S.p.A.;NA;NA
+NA;NA;NA;NA;NA;Merck;NA;NA
+NA;NA;NA;NA;NA;Metro;NA;NA
+NA;NA;NA;NA;NA;Michelin;NA;NA
+NA;NA;NA;NA;NA;Microsoft;NA;NA
+NA;NA;NA;NA;NA;MLP;NA;NA
+NA;NA;NA;NA;NA;Moncler;NA;NA
+NA;NA;NA;NA;NA;MTU Aero Engines;NA;NA
+NA;NA;NA;NA;NA;Münchener Rück [+];NA;NA
+NA;NA;NA;NA;NA;Nestlé S.A.;NA;NA
+NA;NA;NA;NA;NA;Nike Inc. CI B [+];NA;NA
+NA;NA;NA;NA;NA;Nokia [+];NA;NA
+NA;NA;NA;NA;NA;Nordex;NA;NA
+NA;NA;NA;NA;NA;Novartis [+];NA;NA
+NA;NA;NA;NA;NA;OMV;NA;NA
+NA;NA;NA;NA;NA;Orange;NA;NA
+NA;NA;NA;NA;NA;Osram Licht;NA;NA
+NA;NA;NA;NA;NA;Panasonic Corp.;NA;NA
+NA;NA;NA;NA;NA;Pfizer;NA;NA
+NA;NA;NA;NA;NA;Philips Electr. [+];NA;NA
+NA;NA;NA;NA;NA;Pirelli & C;NA;NA
+NA;NA;NA;NA;NA;Porsche Automobil Holding VZO;NA;NA
+NA;NA;NA;NA;NA;Procter & Gamble;NA;NA
+NA;NA;NA;NA;NA;ProSiebenSat.1 Media;NA;NA
+NA;NA;NA;NA;NA;Prysmian;NA;NA
+NA;NA;NA;NA;NA;Renault;NA;NA
+NA;NA;NA;NA;NA;Reply S.p.A.;NA;NA
+NA;NA;NA;NA;NA;Repsol YPF;NA;NA
+NA;NA;NA;NA;NA;Rhön-Klinikum;NA;NA
+NA;NA;NA;NA;NA;Rio Tinto;NA;NA
+NA;NA;NA;NA;NA;Royal Dutch Shell;NA;NA
+NA;NA;NA;NA;NA;RWE;NA;NA
+NA;NA;NA;NA;NA;Sacyr;NA;NA
+NA;NA;NA;NA;NA;Saint-Gobain;NA;NA
+NA;NA;NA;NA;NA;Salvatore Ferragamo;NA;NA
+NA;NA;NA;NA;NA;Salzgitter;NA;NA
+NA;NA;NA;NA;NA;Sanofi-Aventis [+];NA;NA
+NA;NA;NA;NA;NA;SAP [+];NA;NA
+NA;NA;NA;NA;NA;Schneider Electric [+];NA;NA
+NA;NA;NA;NA;NA;SES Global;NA;NA
+NA;NA;NA;NA;NA;Siemens NA;NA;NA
+NA;NA;NA;NA;NA;Sixt;NA;NA
+NA;NA;NA;NA;NA;Snam Rete Gas;NA;NA
+NA;NA;NA;NA;NA;Software AG;NA;NA
+NA;NA;NA;NA;NA;Sony [+];NA;NA
+NA;NA;NA;NA;NA;STADA Arzneimittel;NA;NA
+NA;NA;NA;NA;NA;Starbucks Corp.;NA;NA
+NA;NA;NA;NA;NA;Südzucker;NA;NA
+NA;NA;NA;NA;NA;Telefónica [+];NA;NA
+NA;NA;NA;NA;NA;Telekom Austria;NA;NA
+NA;NA;NA;NA;NA;ThyssenKrupp;NA;NA
+NA;NA;NA;NA;NA;TOTAL;NA;NA
+NA;NA;NA;NA;NA;Toyota;NA;NA
+NA;NA;NA;NA;NA;TUI;NA;NA
+NA;NA;NA;NA;NA;Ubi Banca;NA;NA
+NA;NA;NA;NA;NA;Ubisoft Entertain;NA;NA
+NA;NA;NA;NA;NA;UBS;NA;NA
+NA;NA;NA;NA;NA;UniCredit S.p.A.;NA;NA
+NA;NA;NA;NA;NA;Unilever;NA;NA
+NA;NA;NA;NA;NA;United Internet;NA;NA
+NA;NA;NA;NA;NA;Veolia Environnement;NA;NA
+NA;NA;NA;NA;NA;Vinci S.A.;NA;NA
+NA;NA;NA;NA;NA;Vivendi S.A. [+];NA;NA
+NA;NA;NA;NA;NA;Vodafone;NA;NA
+NA;NA;NA;NA;NA;voestalpine;NA;NA
+NA;NA;NA;NA;NA;Volkswagen Vz. [+];NA;NA
+NA;NA;NA;NA;NA;Wacker Chemie;NA;NA
+NA;NA;NA;NA;NA;Walt Disney;NA;NA
+NA;NA;NA;NA;NA;Wincor Nixdorf;NA;NA
+NA;NA;NA;NA;NA;Wirecard;NA;NA
+NA;NA;NA;NA;NA;Atlas Copco A [+];NA;NA
+NA;NA;NA;NA;NA;Electrolux, AB ser.B;NA;NA
+NA;NA;NA;NA;NA;Ericsson B;NA;NA
+NA;NA;NA;NA;NA;Hennes & Mauritz [+];NA;NA
+NA;NA;NA;NA;NA;Modern Times Group B;NA;NA
+NA;NA;NA;NA;NA;Swedbank;NA;NA
+NA;NA;NA;NA;NA;Volvo;NA;NA
+NA;NA;NA;NA;NA;3,25% Bundesrep. Deutschland 11/21;NA;NA
+NA;NA;NA;NA;NA;3,5% Volkswagen 09/15;NA;NA
+NA;NA;NA;NA;NA;4,125 EIB Europ. Invest. Bank 07/24;NA;NA
+NA;NA;NA;NA;NA;DekaFonds TF;NA;NA
+NA;NA;NA;NA;NA;Deka-Liquidität: EURO TF;NA;NA
+NA;NA;NA;NA;NA;Deka-UmweltInvest TF;NA;NA
+NA;NA;NA;NA;NA;AriDeka TF;NA;NA
+NA;NA;NA;NA;NA;Deka-Deutschland Balance TF;NA;NA
+NA;NA;NA;NA;NA;Deka-GlobalChampions TF;NA;NA
+NA;NA;NA;NA;NA;Amazon.com Bonus-Zertifikat (CIT);NA;NA
+NA;NA;NA;NA;NA;BASF Discount-Zertifikat (HSBC);NA;NA
+NA;NA;NA;NA;NA;Bovespa Index-Zertifikat (DBK);NA;NA
+NA;NA;NA;NA;NA;Brent Crud Quanto-Zertifikat (ABN);NA;NA
+NA;NA;NA;NA;NA;DAX Index-Zertifikat (DBK);NA;NA
+NA;NA;NA;NA;NA;DAX Reverse-Index-Zertifikat (DZ);NA;NA
+NA;NA;NA;NA;NA;EuroStoxx50 (DBC);NA;NA
+NA;NA;NA;NA;NA;Gold Quanto-Zertifikat (ABN);NA;NA
+NA;NA;NA;NA;NA;Kupfer Partizip.-Zertifikat (RBS);NA;NA
+NA;NA;NA;NA;NA;MDAX Index-Zertifikat (BLB);NA;NA
+NA;NA;NA;NA;NA;NASDAQ 100 Index-Zertifikat (DBK);NA;NA
+NA;NA;NA;NA;NA;Nickel Index-Zertifikat (RBS);NA;NA
+NA;NA;NA;NA;NA;Palladium Quanto-Zertifikat (ABN);NA;NA
+NA;NA;NA;NA;NA;Rare Metals Index-Zertifikat (RBS);NA;NA
+NA;NA;NA;NA;NA;S&P 500 Index-Zertifikat (COM);NA;NA
+NA;NA;NA;NA;NA;Silber Quanto-Zertifikat (ABN);NA;NA
+NA;NA;NA;NA;NA;Südeur.-Index Basket-Zertifikat (DB);NA;NA
+NA;NA;NA;NA;NA;TECDAX Index-Zertifikat (DBK);NA;NA
+NA;NA;NA;NA;NA;World Alternative Energy Index (SGE);NA;NA
+NA;NA;NA;NA;NA;World Uranium-Partizip-Zertifikat (SOG);NA;NA
+NA;NA;NA;NA;NA;World Water Index-Zertifkat (SGE);NA;NA
+                                                         NA;Zucker Partizip.-Zertifikat (RBS);NA;NA

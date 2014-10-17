@@ -5,13 +5,23 @@
 library(quantmod)
 library(ggplot2)
 library(zoo)
+library(RCurl)
+library(XML)
 setwd("/home/zapata/Dokumente/Finance")
 
 #get list of Symbols for DAX-values
-symbs <- scan(file="tickers.txt", sep=";",
-              what=list(dax="",dax_names="",planspiel="",ps_names=""),
-              skip=1)
-l <- symbs$dax
+# http://www.ats.ucla.edu/stat/r/modules/raw_data.htm
+symbs <- read.csv("tickers.txt",
+                  header=T, skip=0,
+                  sep=';', dec='.',
+                  stringsAsFactors=F, fill=T,
+                  blank.lines.skip=T,
+                  na.strings=c(NA,"NA"," NA ","#N/A N/A"))
+
+# l <- na.omit(symbs$dax)
+# names(l) <- na.omit(symbs$dax_names); names(l)
+l <- na.omit(symbs$planspiel)
+names(l) <- na.omit(symbs$ps_names); names(l)
 
 # get last n month's start-date
 # http://stackoverflow.com/a/13268816/3569509
