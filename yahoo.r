@@ -181,3 +181,6 @@ pars <- c(50,100,120)
 x <- as.matrix(cbind(Hi(udlyg),Lo(udlyg),Cl(udlyg)))
 colnames(x) <- c("High","Low","Close")
 out <- ichimoku(x,pars)
+out$cloud.lines
+
+addTA(out[[2]])
