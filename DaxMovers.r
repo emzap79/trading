@@ -1,6 +1,12 @@
-##################################
-#  performance of german stocks  #
-##################################
+#!/usr/bin/env Rscript
+
+# vim:fdm=marker
+# File: DaxMovers.r
+# Author: Jonas Petong
+# URL: ${4}
+# Description: performance of german stocks
+# Last Modified: Oktober 21, 2014
+
 # http://www.r-bloggers.com/displaying-german-stock-performance-with-r-using-ggplot2/
 library(quantmod)
 library(ggplot2)
@@ -18,10 +24,12 @@ symbs <- read.csv("tickers.txt",
                   blank.lines.skip=T,
                   na.strings=c(NA,"NA"," NA ","#N/A N/A"))
 
-# l <- na.omit(symbs$dax)
-# names(l) <- na.omit(symbs$dax_names); names(l)
-l <- na.omit(symbs$planspiel)
-names(l) <- na.omit(symbs$ps_names); names(l)
+l <- na.omit(symbs$dax)
+names(l) <- na.omit(symbs$dax_names); names(l)
+# l <- na.omit(symbs$planspiel_alle)
+# names(l) <- na.omit(symbs$ps_alle_names[1:length(l)]); names(l)
+# l <- na.omit(symbs$watchlist)
+# names(l) <- na.omit(symbs$wl_names); names(l)
 
 # get last n month's start-date
 # http://stackoverflow.com/a/13268816/3569509
@@ -42,13 +50,17 @@ symbolFrame <- function(symbolList) {
 
 }
 
-Data <- symbolFrame(l[-1]) # build a dataframe without DAX istelf
-Data <- cbind(Ad(GDAXI), Data) # add DAX
+Data <- symbolFrame(l[-1])                                        # build a dataframe without DAX istelf
+Data <- cbind(Ad(GDAXI), Data)                                    # add DAX
 colnames(Data)[1] <- "DAX"
-tail(Data,2) #just to check - often Yahoo is not up to date and there are NAs in the last row
-#Data <- window(Data, start=start(Data), end=end(Data)-1) # code to delete last row...
+tail(Data,2)                                                      # just to check -
+                                                                  # often Yahoo is not up
+                                                                  # to date and there are NAs
+                                                                  # in the last row
 
-Return.calculate(Data, method="simple") -> Data.r #calculates the returns (simple)
+#Data <- window(Data, start=start(Data), end=end(Data)-1)         # code to delete last row...
+
+Return.calculate(Data, method="simple") -> Data.r                 # calculates the returns (simple)
 Data.r[is.na(Data.r)] <- 0
 
 #builds frames for the respective perfromances on short, mid and long term
@@ -61,9 +73,11 @@ per.df <- data.frame(cbind(t(short.perf), t(mid.perf), t(long.perf)))
 colnames(per.df) <- c("short", "mid", "long")
 row.names(per.df)[1] <- "DAX"
 chart_title <- paste("Performance Comparison DAX values\n(latest data close of ",end(Data),")")
-z <- ggplot(data=per.df, aes(short, mid, label=rownames(per.df))) + geom_point(aes(color=long), size=4) +
+ggplot(data=per.df, aes(short, mid, label=rownames(per.df))) + geom_point(aes(color=long), size=4) +
 geom_text(hjust=0, vjust=0,size=4) + geom_vline(xintercept=0) + geom_hline(yintercept=0) +
 scale_colour_gradient2(low="red", high="green", "250days\nPerformance") +
 scale_y_continuous("Mid Performance: 20days", labels= percent ) +
-scale_x_continuous("Short Performance: 5days", labels= percent )
-z + theme(legend.background = element_rect(colour = "black"))
+scale_x_continuous("Short Performance: 5days", labels= percent ) +
+theme(legend.background = element_rect(colour = "black"))
+
+# z + theme(legend.background = element_rect(colour = "black"))

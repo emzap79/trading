@@ -30,14 +30,13 @@ symbs <- read.csv("tickers.txt",
                   blank.lines.skip=T,
                   na.strings=c(NA,"NA"," NA ","#N/A N/A"))
 
-# Planspiel                   {{{2
-tickers <- na.omit(symbs$planspiel)
-
-# Medical Stocks                   {{{2
-tickers <- na.omit(symbs$medical)
-
 # In Combination
-tickers <- na.omit(c(symbs$planspiel,symbs$medical))
+# tickers <- na.omit(c(symbs$watchlist,symbs$medical))
+
+# tickers <- na.omit(symbs$dax) # Dax
+# tickers <- na.omit(symbs$medical) # Medical Stocks
+tickers <- na.omit(symbs$watchlist) # Watchlist
+# tickers <- tickers[2:length(tickers)]
 
 # Start for-loop              {{{2
 x11()
@@ -56,7 +55,8 @@ chartSeries(udlyg,
             subset="last 1 years",
             name=paste0(nms," (",ticker,")"),
             type = "candlesticks",
-            multi.col = T,
+            multi.col = F,
+            log.scale = T,
             bar.type = "ohlc",
             theme = chartTheme("white"),
             TA = c(addBBands(),
@@ -70,7 +70,7 @@ chartSeries(udlyg,
                    addVo())
             )
 
-Sys.sleep(3)
+Sys.sleep(2)
 
 # also easy zooming
 zoomChart("last 12 weeks")
