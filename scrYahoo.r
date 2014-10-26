@@ -1,6 +1,7 @@
 # vim: fdm=marker
 #!/usr/bin/env Rscript
 setwd("/home/zapata/Dokumente/Finance")
+n <- 1
 
 # Packages                    {{{1
 require(latticeExtra)
@@ -52,13 +53,15 @@ nms <- paste(getQuote(ticker, what=yahooQF("Name"))[,2])
 
 # Create Chart                {{{1
 chartSeries(udlyg,
-            subset="last 1 years",
+            #             subset="last 1 years",
+            subset="last 4 months",
             name=paste0(nms," (",ticker,")"),
             type = "candlesticks",
             multi.col = F,
             log.scale = T,
             bar.type = "ohlc",
             theme = chartTheme("white"),
+            up.col="white",dn.col="black",
             TA = c(addBBands(),
                    addMACD(),
                    addEMA(n = 20, wilder = FALSE, ratio=NULL, on = 1,
@@ -70,14 +73,18 @@ chartSeries(udlyg,
                    addVo())
             )
 
-Sys.sleep(2)
+# Sys.sleep(2)
 
 # also easy zooming
-zoomChart("last 12 weeks")
+# zoomChart("last 12 weeks")
 # locator(1)
 
     # Leave Plot open until closed manually
     # http://stackoverflow.com/a/8168190/3569509
-    locator(1)
+#     locator(1)
+
+
+dev.copy2pdf(device="pdf", file=paste0("candle",n,".pdf"), out.type="pdf")
+n <- n+1
 
 }

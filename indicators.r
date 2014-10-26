@@ -7,9 +7,10 @@ funPointAndFigure(udlyg,tick)
 alligator(udlyg)
 
 # Ichimoku
-# zoomChart("last 12 weeks")
-#     addTA(ichimoku(HLC(udlyg)))
-ichimoku(HLC(udlyg))
+pars <- c(50,100,120)
+x <- matrix(c(Hi(udlyg),Lo(udlyg),Cl(udlyg)),ncol=3)
+colnames(x) <- c("High","Low","Close")
+out <- ichimoku(x,pars)
 
 # EMA's
 EMA9 <- EMA(Cl(udlyg), n = 9); addTA(EMA9, on=1, lwd = 3, col = "red")
