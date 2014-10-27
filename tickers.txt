@@ -1,17 +1,17 @@
 dax;dax_names;watchlist;wl_names;planspiel_alle;ps_alle_names;medical;med_names
 ^GDAXI;DAX;^GDAXI;DAX;^GDAXI;DAX;^GDAXI;DAX
-ADS.DE;Adidas;FME.DE;"Noname";AUC.F;Abertis, Serie A;TKMR;Tekmira "Ebola" Medicin
-ALV.DE;Allianz;VOW.DE;"Noname";ACS.MC;ACS;CMRX;Chimerix "Ebola" Medicin
-BAS.DE;BASF;CBK.DE;"Noname";ADS.DE;adidas [+];LAKE;Lakeland "Ebola"
-BAYN.DE;Bayer;CON.DE;"Noname";AB1.DE;Air Berlin;AHPI;Allied Healthcare
-BEI.DE;Beiersdorf;ADS.DE;"Noname";AIL.F;Air Liquide [+];SRPT;Sarepta Therapeutics
-BMW.DE;BMW;DAI.DE;"Noname";AIR.DE;Airbus Group;NA;NA
-CBK.DE;Commerzbank;HEI.DE;"Noname";ALU.DE;Alcoa;NA;NA
-CON.DE;Continental;BMW.DE;"Noname";ALV.DE;Allianz SE;NA;NA
-DAI.DE;Daimler;BAS.DE;"Noname";AI3A.F;Amadeus IT Holding;NA;NA
-DB1.DE;Deutsch Boerse;TSLA;"Noname";AMZ.DE;Amazon;NA;NA
+ADS.DE;Adidas;NA;"Noname";AUC.F;Abertis, Serie A;TKMR;Tekmira "Ebola" Medicin
+ALV.DE;Allianz;NA;"Noname";ACS.MC;ACS;CMRX;Chimerix "Ebola" Medicin
+BAS.DE;BASF;NA;"Noname";ADS.DE;adidas [+];LAKE;Lakeland "Ebola"
+BAYN.DE;Bayer;NA;"Noname";AB1.DE;Air Berlin;AHPI;Allied Healthcare
+BEI.DE;Beiersdorf;NA;"Noname";AIL.F;Air Liquide [+];SRPT;Sarepta Therapeutics
+BMW.DE;BMW;NA;"Noname";AIR.DE;Airbus Group;NA;NA
+CBK.DE;Commerzbank;NA;"Noname";ALU.DE;Alcoa;NA;NA
+CON.DE;Continental;NA;"Noname";ALV.DE;Allianz SE;NA;NA
+DAI.DE;Daimler;NA;"Noname";AI3A.F;Amadeus IT Holding;NA;NA
+DB1.DE;Deutsch Boerse;NA;"Noname";AMZ.DE;Amazon;NA;NA
 DBK.DE;Deutsche Bank;ADS.DE;"Noname";AMD.DE;AMD Advanced Micro Devices;NA;NA
-DPW.DE;Deutsche Post AG;LHA.DE;"Noname";AZ2.DE;Andritz;NA;NA
+DPW.DE;Deutsche Post AG;GBF.DE;"Noname";AZ2.DE;Andritz;NA;NA
 DTE.DE;Deutsche Telekom;NA;NA;APC.DE;Apple Inc.;NA;NA
 EOAN.DE;E.ON SE;NA;NA;ARCC.DE;Arcelor Mittal;NA;NA
 FME.DE;Fresenius Medical;NA;NA;SOBA.DE;AT&T;NA;NA

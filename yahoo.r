@@ -99,7 +99,7 @@ funChart <- function (y,logrt=F) {
 # source("/home/zapata/Dokumente/Finance/indicators.r")
 
 # choose ticker
-tick <- symb[grep("procter", names(symb), ignore.case=T)]
+tick <- symb[grep("procter", names(symb), ignore.case=T, value=F)]
 
 # call chart function
 nms <- paste(getQuote(tick, what=yahooQF("Name"))[,2])

@@ -1,0 +1,16 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdftex 2013.11.11)  27 OCT 2014 23:46
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**patterns.r
+(./patterns.r
+! You can't use `macro parameter character #' in vertical mode.
+l.1 #
+      vim: fdm=marker
+? 
+! Emergency stop.
+l.1 #
+      vim: fdm=marker
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!
