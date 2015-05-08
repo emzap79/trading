@@ -1,36 +1,36 @@
 dax;dax_names;watchlist;wl_names;planspiel_alle;ps_alle_names;medical;med_names
 ^GDAXI;DAX;^GDAXI;DAX;^GDAXI;DAX;^GDAXI;DAX
-ADS.DE;Adidas;NA;"Noname";AUC.F;Abertis, Serie A;TKMR;Tekmira "Ebola" Medicin
-ALV.DE;Allianz;NA;"Noname";ACS.MC;ACS;CMRX;Chimerix "Ebola" Medicin
-BAS.DE;BASF;NA;"Noname";ADS.DE;adidas [+];LAKE;Lakeland "Ebola"
-BAYN.DE;Bayer;NA;"Noname";AB1.DE;Air Berlin;AHPI;Allied Healthcare
-BEI.DE;Beiersdorf;NA;"Noname";AIL.F;Air Liquide [+];SRPT;Sarepta Therapeutics
-BMW.DE;BMW;NA;"Noname";AIR.DE;Airbus Group;NA;NA
-CBK.DE;Commerzbank;NA;"Noname";ALU.DE;Alcoa;NA;NA
-CON.DE;Continental;NA;"Noname";ALV.DE;Allianz SE;NA;NA
-DAI.DE;Daimler;NA;"Noname";AI3A.F;Amadeus IT Holding;NA;NA
-DB1.DE;Deutsch Boerse;NA;"Noname";AMZ.DE;Amazon;NA;NA
-DBK.DE;Deutsche Bank;ADS.DE;"Noname";AMD.DE;AMD Advanced Micro Devices;NA;NA
-DPW.DE;Deutsche Post AG;GBF.DE;"Noname";AZ2.DE;Andritz;NA;NA
-DTE.DE;Deutsche Telekom;NA;NA;APC.DE;Apple Inc.;NA;NA
-EOAN.DE;E.ON SE;NA;NA;ARCC.DE;Arcelor Mittal;NA;NA
-FME.DE;Fresenius Medical;NA;NA;SOBA.DE;AT&T;NA;NA
-FRE.DE;Fresenius SE;NA;NA;AU9.F;Atlantia;NA;NA
-HEI.DE;Heidelberg Cement;NA;NA;NDA.DE;Aurubis;NA;NA
-HEN3.DE;Henkel AG;NA;NA;AUL.F;Autogrill Spa;NA;NA
-IFX.DE;Infineon;NA;NA;AXA.DE;AXA [+];NA;NA
-LHA.DE;Lufthansa;NA;NA;BBVA.DE;Banco Bilbao Viz. Arg. (BBVA) [+];NA;NA
-LIN.DE;Linde;NA;NA;BSDK.DE;Banco Santander Centr. Hisp. (BSCH);NA;NA
-LXS.DE;Lanxess AG;NA;NA;BAS.DE;BASF;NA;NA
-MRK.DE;Merck;NA;NA;BAYN.DE;Bayer;NA;NA
-MUV2.DE;Muechner Re;NA;NA;BMW.DE;Bayer. Motoren Werke (BMW) St. [+];NA;NA
-RWE.DE;Rewe;NA;NA;BEI.DE;Beiersdorf;NA;NA
-SAP.DE;SAP;NA;NA;BHP.DE;BHP Billiton;NA;NA
-SDF.DE;K+S AG;NA;NA;GBF.DE;Bilfinger Berger;NA;NA
-SIE.DE;Siemens AG;NA;NA;BNPH.DE;BNP Paribas [+];NA;NA
-TKA.DE;Thyssenkrupp;NA;NA;BYG.DE;Bouygues;NA;NA
-VOW3.DE;Volkswagen;NA;NA;UCM.F;Buzzi Unicem;NA;NA
-VOW.DE;Volkswagen;NA;NA;3425733.F;Caixabank;NA;NA
+ADS.DE;Adidas;ADS.DE;Adidas;Abertis;TKMR;Tekmira "Ebola" Medicin
+ALV.DE;Allianz;TSLA;Allianz;ACS.MC;ACS;CMRX;Chimerix "Ebola" Medicin
+BAS.DE;BASF;BAS.DE;BASF;ADS.DE;adidas [+];LAKE;Lakeland "Ebola"
+BAYN.DE;Bayer;BAYN.DE;Bayer;AB2.DE;Air Berlin;AHPI;Allied Healthcare
+BEI.DE;Beiersdorf;ALV.DE;Beiersdorf;AIL.F;Air Liquide [+];SRPT;Sarepta Therapeutics
+BMW.DE;BMW;SIE.DE;BMW;AIR.DE;Airbus Group;NA;NA
+CBK.DE;Commerzbank;DAI.DE;Commerzbank;ALU.DE;Alcoa;NA;NA
+CON.DE;Continental;DPW.DE;Continental;ALV.DE;Allianz SE;NA;NA
+DAI.DE;Daimler;LIN.DE;Daimler;AI3A.F;Amadeus IT Holding;NA;NA
+DB1.DE;Deutsch Boerse;MUV2.DE;Deutsch Boerse;AMZ.DE;Amazon;NA;NA
+DBK.DE;Deutsche Bank;;Deutsche Bank;AMD.DE;AMD Advanced Micro Devices;NA;NA
+DPW.DE;Deutsche Post AG;;Deutsche Post AG;AZ2.DE;Andritz;NA;NA
+DTE.DE;Deutsche Telekom;TUI1.DE;Deutsche Telekom;APC.DE;Apple Inc.;NA;NA
+EOAN.DE;E.ON SE;;E.ON SE;ARCC.DE;Arcelor Mittal;NA;NA
+FME.DE;Fresenius Medical;;Fresenius Medical;SOBA.DE;AT&T;NA;NA
+FRE.DE;Fresenius SE;;Fresenius SE;AU9.F;Atlantia;NA;NA
+HEI.DE;Heidelberg Cement;;Heidelberg Cement;NDA.DE;Aurubis;NA;NA
+HEN3.DE;Henkel AG;;Henkel AG;AUL.F;Autogrill Spa;NA;NA
+IFX.DE;Infineon;;Infineon;AXA.DE;AXA [+];NA;NA
+LHA.DE;Lufthansa;;Lufthansa;BBVA.DE;Banco Bilbao Viz. Arg. (BBVA) [+];NA;NA
+LIN.DE;Linde;;Linde;BSDK.DE;Banco Santander Centr. Hisp. (BSCH);NA;NA
+LXS.DE;Lanxess AG;;Lanxess AG;BAS.DE;BASF;NA;NA
+MRK.DE;Merck;;Merck;BAYN.DE;Bayer;NA;NA
+MUV2.DE;Muechner Re;;Muechner Re;BMW.DE;Bayer. Motoren Werke (BMW) St. [+];NA;NA
+RWE.DE;Rewe;;Rewe;BEI.DE;Beiersdorf;NA;NA
+SAP.DE;SAP;;SAP;BHP.DE;BHP Billiton;NA;NA
+SDF.DE;K+S AG;;K+S AG;GBF.DE;Bilfinger Berger;NA;NA
+SIE.DE;Siemens AG;;Siemens AG;BNPH.DE;BNP Paribas [+];NA;NA
+TKA.DE;Thyssenkrupp;;Thyssenkrupp;BYG.DE;Bouygues;NA;NA
+VOW3.DE;Volkswagen;;Volkswagen;UCM.F;Buzzi Unicem;NA;NA
+VOW.DE;Volkswagen;;Volkswagen;3425733.F;Caixabank;NA;NA
 NA;NA;NA;NA;CAR.DE;Carrefour;NA;NA
 NA;NA;NA;NA;CLS1.DE;Celesio;NA;NA
 NA;NA;NA;NA;CIS.DE;Cisco Systems [+];NA;NA

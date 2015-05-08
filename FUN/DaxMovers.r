@@ -3,11 +3,10 @@
 # vim:fdm=marker
 # File: DaxMovers.r
 # Author: Jonas Petong
-# URL: ${4}
+# URL: http://www.r-bloggers.com/displaying-german-stock-performance-with-r-using-ggplot2/
 # Description: performance of german stocks
 # Last Modified: Oktober 21, 2014
 
-# http://www.r-bloggers.com/displaying-german-stock-performance-with-r-using-ggplot2/
 library(quantmod)
 library(ggplot2)
 library(zoo)
@@ -24,12 +23,12 @@ symbs <- read.csv("tickers.txt",
                   blank.lines.skip=T,
                   na.strings=c(NA,"NA"," NA ","#N/A N/A"))
 
-l <- na.omit(symbs$dax)
-names(l) <- na.omit(symbs$dax_names); names(l)
+# l <- na.omit(symbs$dax)
+# names(l) <- na.omit(symbs$dax_names); names(l)
 # l <- na.omit(symbs$planspiel_alle)
 # names(l) <- na.omit(symbs$ps_alle_names[1:length(l)]); names(l)
-# l <- na.omit(symbs$watchlist)
-# names(l) <- na.omit(symbs$wl_names); names(l)
+l <- na.omit(symbs$watchlist)
+names(l) <- na.omit(symbs$wl_names); names(l)
 
 # get last n month's start-date
 # http://stackoverflow.com/a/13268816/3569509

@@ -2,7 +2,8 @@
 #!/usr/bin/env Rscript
 # http://www.r-bloggers.com/stock-analysis-using-r/
 
-source("/home/zapata/.R/packages.r")
+source("packages.r")
+
 setwd("/home/zapata/Dokumente/Finance")
 # Assign Ticker               {{{1
 # read from csv               {{{2
@@ -23,18 +24,18 @@ symbs <- read.csv("tickers.txt",
 # symb <- na.omit(symbs$dax)
 # names(symb) <- na.omit(symbs$dax_names); names(symb)
 
-# # watchlist                 {{{2
-# symb <- na.omit(symbs$watchlist)
-# names(symb) <- na.omit(symbs$wl_names); names(symb)
+# watchlist                 {{{2
+symb <- na.omit(symbs$watchlist)
+names(symb) <- na.omit(symbs$wl_names); names(symb)
 
 # ## aktien
 # # symb <- symb[1:169]
 # ## zertifikate
 # # symb <- symb[169:length(symb)]
 
-# planspiel (alle)            {{{2
-symb <- na.omit(symbs$planspiel_alle)
-names(symb) <- na.omit(symbs$ps_alle_names[1:length(symb)]); names(symb)
+# # planspiel (alle)            {{{2
+# symb <- na.omit(symbs$planspiel_alle)
+# names(symb) <- na.omit(symbs$ps_alle_names[1:length(symb)]); names(symb)
 
 # Retreive Data               {{{1
 # Get Stock Data From Yahoo   {{{2
@@ -73,12 +74,12 @@ funChart <- function (y,logrt=F) {
                 type = "candlesticks",  # type = c("auto", "candlesticks", "matchsticks", "bars","line"),
                 bar.type = "hlc",
                 multi.col = F,
-                log.scale=logrt,
+                log.scale=T,
                 theme = chartTheme("white"),
                 TA = c(addBBands(),         # Bolinger Bands
                        addMACD(),           # Moving Average Convergence Divergence
-                       addSAR(),            # Parabolic Stop and Reverse
-                       addSMI(),            # Stochastic Momentum
+                       #                        addSAR(),            # Parabolic Stop and Reverse
+                       #                        addSMI(),            # Stochastic Momentum
                        addVo()              # Volume
                        )
                 )
@@ -96,10 +97,11 @@ funChart <- function (y,logrt=F) {
 # http://timelyportfolio.github.io/rCharts_time_series/history.html
 
 # Source Indicators
-# source("/home/zapata/Dokumente/Finance/indicators.r")
+# source("indicators.r")
 
 # choose ticker
-tick <- symb[grep("procter", names(symb), ignore.case=T, value=F)]
+tick <- symb[grep("dax", names(symb), ignore.case=T, value=F)]
+# tick <- symb[6]
 
 # call chart function
 nms <- paste(getQuote(tick, what=yahooQF("Name"))[,2])

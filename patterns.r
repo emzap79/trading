@@ -12,7 +12,7 @@
 # technical patterns in terms of tops and bottoms. Search for classical
 # technical patterns throughout the tops and bottoms of the kernel regression
 # estimator.
-source("/home/zapata/.R/packages.r")
+source("packages.r")
 setwd("/home/zapata/Dokumente/Finance")
 
 
@@ -35,7 +35,7 @@ symbs <- read.csv("tickers.txt",
 # dax
 symb <- na.omit(symbs$planspiel_alle)
 names(symb) <- na.omit(symbs$ps_alle_names[1:length(symb)]); names(symb)
-ticker <- symb[grep("adidas", names(symb), ignore.case=T)]
+ticker <- symb[grep("dax", names(symb), ignore.case=T)]
 
 # Pattern Matching       {{{1
 if(!exists("pattern.db", mode="function")) source("rfinance2012.r")

@@ -73,18 +73,14 @@ chartSeries(udlyg,
                    addVo())
             )
 
-# Sys.sleep(2)
+Sys.sleep(2)
 
-# also easy zooming
-# zoomChart("last 12 weeks")
-# locator(1)
+# Leave Plot open until closed manually
+# http://stackoverflow.com/a/8168190/3569509
+zoomChart("last 12 weeks")
+locator(1)
 
-    # Leave Plot open until closed manually
-    # http://stackoverflow.com/a/8168190/3569509
-#     locator(1)
-
-
-dev.copy2pdf(device="pdf", file=paste0("candle",n,".pdf"), out.type="pdf")
+# dev.copy2pdf(device="pdf", file=paste0("candle",n,".pdf"), out.type="pdf")
 n <- n+1
 
 }
