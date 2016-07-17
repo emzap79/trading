@@ -1,6 +1,6 @@
 # vim: fdm=marker
 #!/usr/bin/env Rscript
-setwd("/home/zapata/Dokumente/Finance")
+setwd("/home/zapata/Dokumente/Trading")
 n <- 1
 
 # Packages                    {{{1
@@ -53,8 +53,8 @@ nms <- paste(getQuote(ticker, what=yahooQF("Name"))[,2])
 
 # Create Chart                {{{1
 chartSeries(udlyg,
-            #             subset="last 1 years",
-            subset="last 4 months",
+            subset="last 2 years",
+            # subset="last 4 months",
             name=paste0(nms," (",ticker,")"),
             type = "candlesticks",
             multi.col = F,
@@ -72,7 +72,6 @@ chartSeries(udlyg,
                           with.col = Cl, overlay = TRUE, col = "cyan"),
                    addVo())
             )
-
 Sys.sleep(2)
 
 # Leave Plot open until closed manually
